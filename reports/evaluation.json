@@ -1,0 +1,91 @@
+{
+  "train_rows": 12390,
+  "validation_rows": 2655,
+  "test_rows": 2655,
+  "threshold": 0.63,
+  "validation": {
+    "tn": 1397,
+    "fp": 21,
+    "fn": 116,
+    "tp": 1121,
+    "ham_specificity": 0.9852,
+    "scam_recall": 0.9062,
+    "precision": 0.9816
+  },
+  "test": {
+    "tn": 1396,
+    "fp": 20,
+    "fn": 111,
+    "tp": 1128,
+    "ham_specificity": 0.9859,
+    "scam_recall": 0.9104,
+    "precision": 0.9826
+  },
+  "test_by_source": {
+    "ceas": {
+      "tn": 361,
+      "fp": 13,
+      "fn": 50,
+      "tp": 296,
+      "ham_specificity": 0.9652,
+      "scam_recall": 0.8555,
+      "precision": 0.9579
+    },
+    "enron": {
+      "tn": 365,
+      "fp": 3,
+      "fn": 26,
+      "tp": 178,
+      "ham_specificity": 0.9918,
+      "scam_recall": 0.8725,
+      "precision": 0.9834
+    },
+    "sms": {
+      "tn": 670,
+      "fp": 4,
+      "fn": 24,
+      "tp": 65,
+      "ham_specificity": 0.9941,
+      "scam_recall": 0.7303,
+      "precision": 0.942
+    }
+  },
+  "indian_diagnostic": [
+    {
+      "text": "Your electricity will be disconnected today. Verify your account immediately.",
+      "actual": "scam",
+      "predicted": "scam",
+      "score": 0.846
+    },
+    {
+      "text": "Your college timetable has been uploaded. Please check the student portal.",
+      "actual": "ham",
+      "predicted": "ham",
+      "score": 0.411
+    },
+    {
+      "text": "You are eligible for a UPI refund. Click the link to claim it.",
+      "actual": "scam",
+      "predicted": "scam",
+      "score": 0.646
+    },
+    {
+      "text": "Your order has been shipped and will arrive tomorrow.",
+      "actual": "ham",
+      "predicted": "ham",
+      "score": 0.581
+    },
+    {
+      "text": "Complete your KYC immediately to avoid account suspension.",
+      "actual": "scam",
+      "predicted": "scam",
+      "score": 0.92
+    },
+    {
+      "text": "Your bank account was debited for your recent purchase.",
+      "actual": "ham",
+      "predicted": "scam",
+      "score": 0.984
+    }
+  ]
+}
